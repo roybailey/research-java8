@@ -4,7 +4,6 @@ Java8 sandpit project with various snippets of code for testing and learning bit
 
 what | description
 -----|------------
-`node src/<something>/<script>.js` | to run something
-`data/*` | contains any test data files
+`gradle build` | to compile and run the tests
 
 No guarantees anything still works.
