@@ -1,0 +1,70 @@
+
+.content, .button {
+	display: none;
+}
+
+.inputError {
+	background-color: red;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding-left: 0.5em;
+}
+
+.handle {
+    background: transparent url(spacer.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    display: block;
+    float: left;
+    width: 10px;
+    height: 11px;
+}
+
+.collapsed {
+    background: transparent url(plus-black.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    cursor: pointer;
+}
+
+.expanded {
+    background: transparent url(minus-black.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    cursor: pointer;
+}
+
+table {
+    border: 1px solid #808080;
+}
+
+.datagridHeadCell {
+    font-family: Arial;
+    font-weight: bold;
+    background-color : #eeeeff;
+}
+.datagridEvenRow {
+    background-color : #eeffee;
+}
+.datagridOddRow {
+    background-color : #ddffdd;
+    overflow-x : hidden;
+}
+.datagridCell {
+    overflow : hidden;
+    float    : left;
+    height   : 20px;
+    width    : 50px;
+    white-space:nowrap;
+}
+.datagridSelectedRow {
+    background-color : #ccccff;
+}
+

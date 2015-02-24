@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Sample jQuery Page</title>
+        <link rel="stylesheet" type="text/css" href="sample.css" />
+        <script src="jquery/1.10.2/jquery-1.10.2.min.js"></script>
+        <script src="jQuery.tocPlugin.js"></script>
+        <script src="jQuery.dataGrid.js"></script>
+        <script>
+            $(document).ready(function() {
+                
+                tableOfContents($("#tocList"));
+                
+                var dgData;
+
+                $.ajax({
+                    url: "datagrid.json",
+                    dataType: "json"
+                }).done(function(content) {
+                    $("#loading").text(content.people[0].name);
+                    dgData = content.people;
+                    renderDataGrid();
+                }).fail(function(){
+                    $("#loading").text("Failed to load datagrid.json");
+                });
+                
+                var dgConfig = {
+                    columns : [
+                         {title : "Name"       , property : "name", width: 100}
+                        ,{title : "Sex"        , property : "type", width: 100, align : "center"}
+                        ,{title : "Description", property : "desc", width: 300, align : "left"}
+                    ],
+                    onSelect      : function() { /*alert("Selected");*/     },
+                    onUnselect    : function() { /*alert("Unselected");*/   },
+                    onDoubleclick : function() { alert("Double-click"); }
+                };
+
+                function renderDataGrid() {
+                    if( !dgConfig || !dgData ) {
+                        return;
+                    }
+                    jQuery("#datagrid").datagrid(dgConfig, dgData);
+                }
+                    
+                $("#testPrepend").prepend("<b>prepend-</b>");
+                $("#testAppend").append("<b>-append</b>");
+                $("#testBefore").before("<b>before-</b>");
+                $("#testAfter").after("<b>-after</b>");
+                $("#testToggle").click(function() {
+                    $(this).fadeOut('slow');
+                });
+
+                $("#testtree ul").hide();
+                $("#testtree li").each(function() {
+                    var handlespan = $("<span></span>");
+                    handlespan.addClass("handle");
+                    handlespan.prependTo(this);
+                    if( $(this).has("ul").size() > 0) {
+                        handlespan.addClass("collapsed");
+                        handlespan.click(function() {
+                           var clicked = $(this);
+                           clicked.toggleClass("collapsed expanded");
+                           clicked.siblings("ul").toggle();
+                        });
+                    }
+                });
+
+                $("#testTable tr:even").css('background-color','#cccccc');
+                $("#testTable tr:first")
+                        .css('background-color','#666666')
+                        .css('color','#ffffff')
+                        .css('font-style','bold');
+
+                $("#inputWeight").focus();
+                $("#btnDisplayName").click(function() {
+                    $("#nameContainer").text("Alice");
+                });
+                $("#btnShow").click(function() {
+                    $(".content").show();
+                    $("#btnShow").hide();
+                });
+                $("input[name='weightUnit']").change(function() {
+                    $("#btnConvert").fadeIn("slow");
+                });
+                $("#btnMyName").click(function() {
+                    var myName = $("#inputName").val();
+                    $("#resultMyName").text("Hello there " + myName);
+                    if (myName === 'saxen') {
+                        $("#resultMyName").animate({
+                            fontSize: "3em"}, 5000
+                                );
+                    }
+                });
+                $("#btnConvert").click(function() {
+                    if ($("#inputWeight").val() === "") {
+                        $("#inputWeight").addClass("inputError");
+                    }
+                    else {
+                        var convertionType = $("input:radio[name='weightUnit']:checked").val();
+                        var inputWeight = $("#inputWeight").val();
+                        var convertionResult;
+                        var displayResult;
+                        $("#resultContainter").text(convertionType);
+                        switch (convertionType) {
+                            case "lbs2kgs":
+                                convertionResult = inputWeight * 0.45;
+                                displayResult = inputWeight + " LB = " + convertionResult + " KG";
+                                break;
+                            case "kgs2lbs":
+                                convertionResult = inputWeight * 2.2;
+                                displayResult = inputWeight + " KG = " + convertionResult.toFixed(2) + " LB";
+                                break;
+                        }
+                        $("#resultContainter").text(displayResult);
+                        $("#resultContainter").animate({
+                            fontSize: "3em"}, 5000
+                                );
+                    }
+                });
+                $("#btnAdditionalContent").click(function() {
+                    $.ajax({
+                        url: "additionalContent.html"
+                    }).done(function(content) {
+                        $("#additionalContent").html(content);
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Samples</h1>
+        
+        <div id="toc">
+            <ul id="tocList">
+            </ul>
+        </div>
+
+        <h2>Click capture</h2>
+        <p>Hello, my name is : <span id="nameContainer"></span></p>
+        <p><span id="btnDisplayName">[ click here to display name ]</span></p>
+        <p>sdjkn jsdknf ksdjnf ksjdnf ksdnf ksndjf ksndf ksndf ksdn fksdnf sdkj
+            skdj kjsd ksjd nckjsncksdncksdc ksjnc ksnc ksdjnc ksjdn cksjdncsk
+            ks jdncksjn cksn cksdn cksdn cksdn cksd cnkjsdnckjsdn cksdn cskjdn
+        </p>
+        <p id="btnShow">[Read More]</p>
+        <p class="content">sdjkn jsdknf ksdjnf ksjdnf ksdnf ksndjf ksndf ksndf ksdn fksdnf sdkj
+            skdj kjsd ksjd nckjsncksdncksdc ksjnc ksnc ksdjnc ksjdn cksjdncsk
+            ks jdncksjn cksn cksdn cksdn cksdn cksd cnkjsdnckjsdn cksdn cskjdn
+        </p>
+        <p class="content">sdjkn jsdknf ksdjnf ksjdnf ksdnf ksndjf ksndf ksndf ksdn fksdnf sdkj
+            skdj kjsd ksjd nckjsncksdncksdc ksjnc ksnc ksdjnc ksjdn cksjdncsk
+            ks jdncksjn cksn cksdn cksdn cksdn cksd cnkjsdnckjsdn cksdn cskjdn
+        </p>
+        
+        <h2>Adding Content</h2>
+        <p> A <span id="testPrepend">TEST PREPEND</span> A </p>
+        <p> B <span id="testAppend">TEST APPEND</span> B </p>
+        <p> C <span id="testBefore">TEST BEFORE</span> C </p>
+        <p> D <span id="testAfter">TEST AFTER</span> D </p>
+        
+        <h3>Toggle</h3>
+        <p id="testToggle">Toggle Me With A Click</p>
+
+        <h3>Table Colouring</h3>
+        <table id="testTable">
+            <tbody>
+                <tr>
+                    <td>A1</td>
+                    <td>B1</td>
+                    <td>C1</td>
+                </tr>
+                <tr>
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                </tr>
+                <tr>
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>C3</td>
+                </tr>
+                <tr>
+                    <td>A4</td>
+                    <td>B4</td>
+                    <td>C4</td>
+                </tr>
+                <tr>
+                    <td>A5</td>
+                    <td>B5</td>
+                    <td>C5</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Expandable Tree</h2>
+        <ul id="testtree">
+            <li>1
+                <ul>
+                    <li>1.1
+                        <ul>
+                            <li>1.1.1</li>
+                            <li>1.1.2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>2
+                <ul>
+                    <li>2.1
+                        <ul>
+                            <li>2.1.1</li>
+                            <li>2.1.2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Table Data Grid</h2>
+        <table id="datagrid" cellspacing="0" cellpadding="5">
+        </table>
+
+        <h2>Weight Converter</h2>
+        <form>
+            <p>Enter Weight</p>
+            <p><input type="text" id="inputWeight" /></p>
+            <p><input type="radio" id="lbs2kgs" value="lbs2kgs" name="weightUnit"/>From LBs to KGs</p>
+            <p><input type="radio" id="kgs2lbs" value="kgs2lbs" name="weightUnit" />From KGs to IBs</p>
+            <p class="button" id="btnConvert">Convert</p>
+            <p id="resultContainter"></p>
+        </form>
+        
+        <h2>Form Validation</h2>
+        <form>
+            <h4>Enter Your Name</h4>
+            <p><input type="text" id="inputName" /></p>
+            <p id="btnMyName">Say Hello</p>
+            <p id="resultMyName"></p>
+        </form>
+        
+        <h2>Ajax Json Loading</h2>
+        <p id="loading">Loading json....</p>
+
+        <h2>AJAX</h2>
+        <p id="btnAdditionalContent">Click here to load additional content</p>
+        <p id="additionalContent"></p>
+        
+    </body>
+</html>
