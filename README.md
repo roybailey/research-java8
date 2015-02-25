@@ -6,4 +6,4 @@ what | description
 -----|------------
 `gradle build` | to compile and run the tests
 
-No guarantees anything still works.
+Please see license.  No guarantees anything still works.
