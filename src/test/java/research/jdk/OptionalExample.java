@@ -1,4 +1,4 @@
-package research;
+package research.jdk;
 
 import org.junit.Test;
 
