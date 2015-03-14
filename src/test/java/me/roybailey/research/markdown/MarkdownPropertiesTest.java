@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
@@ -89,20 +90,27 @@ public class MarkdownPropertiesTest {
 
     @Test
     public void testMarkdownParsing() throws IOException, InterruptedException {
-        Map<String, String> markdownCode = MarkdownProperties.load(Paths.get(
+        Path filePath = Paths.get(
                 "src/test/java",
                 this.getClass().getPackage().getName().replace(".", File.separator),
-                this.getClass().getSimpleName() + ".md"));
+                this.getClass().getSimpleName() + ".md");
+        Map<String, String> markdownCode = MarkdownProperties.load(filePath);
 
+        System.out.println("----------------------------------------");
+        System.out.println("MarkdownProperties from "+filePath);
         markdownCode.entrySet().stream().forEach(System.out::println);
 
-        assertThat(markdownCode.size(), is(9));
+        assertThat(markdownCode.size(), is(10));
         assertThat(markdownCode.get("create-record"), is("CREATE bla bla bla"));
         assertThat(markdownCode.get("read-record"), is("READ bla WHERE bla.id = {id}"));
         assertThat(markdownCode.get("update-record"), is("\nUPDATE bla\nSET bla\nWHERE bla.id = {id}\n"));
         assertThat(markdownCode.get("delete-record"), is("\nDELETE bla\nWHERE bla.id = {id}\n"));
         assertThat(markdownCode.get("simple"), is("roger that"));
         assertThat(markdownCode.get("server.name"), is("mighty.mike.com"));
+        assertThat(markdownCode.get("username"), is("mickey"));
+        assertThat(markdownCode.get("first"), is("anna"));
+        assertThat(markdownCode.get("second"), is("george"));
+        assertThat(markdownCode.get("third"), is("sally"));
         Thread.sleep(200);
     }
 
