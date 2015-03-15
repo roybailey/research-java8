@@ -33,12 +33,8 @@ public class MarkdownProperties {
         Pattern compiled = Pattern.compile(pattern);
         Matcher matcher = compiled.matcher(payload);
         while (matcher.find() && matcher.group(group).length() > 0) {
-            System.out.print("Start index: " + matcher.start());
-            System.out.print(" End index: " + matcher.end() + " ");
-            System.out.println(matcher.groupCount() + ":" + matcher.group());
             code.add(matcher.group(group));
         }
-        System.out.println(code);
         return code;
     }
 
@@ -57,7 +53,6 @@ public class MarkdownProperties {
         Files.lines(markdown, StandardCharsets.UTF_8)
                 .forEach(line -> {
                     buffer.append(line).append('\n');
-                    System.out.print("buffer: " + buffer.toString());
                     match(PATTERN_CODE_BLOCK, 2, buffer.toString()).stream()
                             .filter(code -> code.trim().length() >= 0)
                             .forEach(code -> {
