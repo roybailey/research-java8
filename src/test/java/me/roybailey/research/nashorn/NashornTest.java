@@ -1,5 +1,6 @@
 package me.roybailey.research.nashorn;
 
+import jdk.nashorn.api.scripting.ScriptObjectMirror;
 import org.junit.After;
 import org.junit.Test;
 import me.roybailey.research.lambda.LambdaTest;
@@ -13,6 +14,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.time.LocalDateTime;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by roybailey on 18/04/2014.
@@ -57,6 +60,27 @@ public class NashornTest {
         // [object java.time.LocalDateTime]
 
         invocable.invokeFunction("fun2", new LambdaTest.Person("J", 5));
-        // [object com.winterbe.java8.Person]
+        // [me.roybailey.research.lambda.LambdaTest$Person]
+
+        Map<String,Object> mapData = new HashMap<>();
+        mapData.put("testString","Hello");
+        mapData.put("testNumber",105);
+        invocable.invokeFunction("fun2", mapData);
+        // [java.util.HashMap]
+
+        // call JS and have it call my object method to get some data
+        invocable.invokeFunction("thereAndBackAgain", this);
+    }
+
+    public Map<String,Object> thereAndBackAgain() {
+        Map<String,Object> mapData = new HashMap<>();
+        mapData.put("StringValue","There And Back Again Worked!");
+        mapData.put("NumberValue",105);
+        return mapData;
+    }
+
+    public void thereAndBackAgainScriptObject(ScriptObjectMirror mapData) {
+        mapData.put("StringValue","There And Back Again Worked!");
+        mapData.put("NumberValue",105);
     }
 }
