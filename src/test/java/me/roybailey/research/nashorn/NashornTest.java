@@ -11,9 +11,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.time.LocalDateTime;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Set of Nashorn tests to show interoperability of Java8 and Nashorn Javascript.
@@ -51,7 +49,7 @@ public class NashornTest {
     }
 
     @Test
-    public void testHelloNashorn() throws FileNotFoundException, ScriptException, NoSuchMethodException {
+    public void testHelloNashorn() throws Exception {
         engine.eval(new FileReader(JAVASCRIPT_TEST_PARTNER));
         Object result = invocable.invokeFunction("helloNashornFromJava", "Peter Parker");
         LOG(result);
@@ -59,7 +57,7 @@ public class NashornTest {
     }
 
     @Test
-    public void testJavaTypesInNashorn() throws FileNotFoundException, ScriptException, NoSuchMethodException {
+    public void testJavaTypesInNashorn() throws Exception {
         engine.eval(new FileReader(JAVASCRIPT_TEST_PARTNER));
 
         invocable.invokeFunction("javaTypesInNashorn", new Date());
@@ -80,7 +78,7 @@ public class NashornTest {
     }
 
     @Test
-    public void testThereAndBackAgain() throws FileNotFoundException, ScriptException, NoSuchMethodException {
+    public void testThereAndBackAgain() throws Exception {
         engine.eval(new FileReader(JAVASCRIPT_TEST_PARTNER));
         // call JS and have it call my object method to get some data
         invocable.invokeFunction("thereAndBackAgain", this);
@@ -99,18 +97,13 @@ public class NashornTest {
     }
 
     @Test
-    public void testGlobalDependencyInjection() throws FileNotFoundException, ScriptException, NoSuchMethodException {
+    public void testGlobalDependencyInjection() throws Exception {
         engine.eval(new FileReader(JAVASCRIPT_TEST_PARTNER));
 
         // Here we are trying to inject a global service and test whether our
         // JavaScript can access it as a global variable after startup injection
         Map<String, Object> mapDependencyInjection = new HashMap<>();
-        mapDependencyInjection.put("service", new Runnable() {
-            @Override
-            public void run() {
-                LOG("This is Java called from Nashorn through a global variable dependency injected object");
-            }
-        });
+        mapDependencyInjection.put("service", (Runnable) () -> LOG("This is Java called from Nashorn through a global variable dependency injected object"));
         mapDependencyInjection.put("globalNumber", 75);
         Bindings bindings = new SimpleBindings();
         bindings.put("ioc", mapDependencyInjection);
@@ -119,5 +112,35 @@ public class NashornTest {
         engine.setBindings(bindings, ScriptContext.GLOBAL_SCOPE);
 
         invocable.invokeFunction("testGlobalDependencyInjection");
+    }
+
+    public List<String> getListOfStrings() {
+        List<String> listStrings = new ArrayList<>();
+        listStrings.add("Anna");
+        listStrings.add("Bert");
+        listStrings.add("Carl");
+        return listStrings;
+    }
+
+    public Map<String, Object> getMapOfValues() {
+        Map<String, Object> map = new HashMap<>();
+        map.put("testString", "hello");
+        map.put("testNumber", 100);
+        map.put("testBoolean", true);
+        return map;
+    }
+
+    public ScriptObjectMirror getScriptObject(ScriptObjectMirror som) {
+        LOG(som.get("nashorn"));
+        LOG(som.get("response"));
+        som.put("response", "HI!");
+        som.put("gift", "$$$$");
+        return som;
+    }
+
+    @Test
+    public void testJavaCollections() throws Exception {
+        engine.eval(new FileReader(JAVASCRIPT_TEST_PARTNER));
+        invocable.invokeFunction("testJavaCollections", this);
     }
 }
