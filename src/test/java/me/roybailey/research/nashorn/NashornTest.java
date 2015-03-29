@@ -27,10 +27,6 @@ public class NashornTest {
         return "returned from java to print from javascript";
     }
 
-    public static void nashornTypesInJava(Object object) {
-        LOG("javascript called java with object type: " + object.getClass());
-    }
-
     String JAVASCRIPT_TEST_PARTNER = "src/test/java/"
             + this.getClass().getPackage().getName().replace(".", File.separator)
             + "/" + this.getClass().getSimpleName() + ".js";
@@ -54,6 +50,16 @@ public class NashornTest {
         Object result = invocable.invokeFunction("helloNashornFromJava", "Peter Parker");
         LOG(result);
         LOG(result.getClass());
+    }
+
+    public static void nashornTypesInJava(Object object) {
+        LOG("javascript called java with object type: " + object.getClass());
+    }
+
+    @Test
+    public void testNashornTypesInJava() throws Exception {
+        engine.eval(new FileReader(JAVASCRIPT_TEST_PARTNER));
+        invocable.invokeFunction("nashornTypesInJava");
     }
 
     @Test
@@ -88,12 +94,14 @@ public class NashornTest {
         Map<String, Object> mapData = new HashMap<>();
         mapData.put("StringValue", "There And Back Again Worked!");
         mapData.put("NumberValue", 105);
+        LOG(mapData);
         return mapData;
     }
 
     public void thereAndBackAgainScriptObject(ScriptObjectMirror mapData) {
         mapData.put("StringValue", "There And Back Again Worked!");
         mapData.put("NumberValue", 105);
+        LOG(mapData);
     }
 
     @Test
