@@ -18,7 +18,7 @@ import java.util.Map;
 public class RetrofitJiraBasicTest {
 
     @Test
-    public void testCountryNames() throws IOException {
+    public void testJIRARestAPI() throws IOException {
         String credentials = System.getProperty("login");
         if(credentials==null) {
             System.out.println("must provide jira credentials as -Dlogin=<username>:<password> for basic authentication");

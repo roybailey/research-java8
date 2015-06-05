@@ -49,16 +49,16 @@
           "isWatching": true
         },
         "creator": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "subtasks": [],
@@ -90,16 +90,16 @@
           "hasVoted": false
         },
         "assignee": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "updated": "2015-03-29T09:07:26.000+0100",
@@ -158,16 +158,16 @@
           "isWatching": true
         },
         "creator": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "subtasks": [],
@@ -199,16 +199,16 @@
           "hasVoted": false
         },
         "assignee": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "updated": "2015-03-28T14:29:02.000+0000",
@@ -267,16 +267,16 @@
           "isWatching": true
         },
         "creator": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "subtasks": [],
@@ -308,16 +308,16 @@
           "hasVoted": false
         },
         "assignee": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "updated": "2015-03-29T08:19:35.000+0100",
@@ -376,16 +376,16 @@
           "isWatching": true
         },
         "creator": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "subtasks": [],
@@ -417,16 +417,16 @@
           "hasVoted": false
         },
         "assignee": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "updated": "2015-03-28T14:29:34.000+0000",
@@ -484,16 +484,16 @@
           "isWatching": true
         },
         "creator": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "subtasks": [],
@@ -579,16 +579,16 @@
           "isWatching": true
         },
         "creator": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "subtasks": [],
@@ -674,16 +674,16 @@
           "isWatching": true
         },
         "creator": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "subtasks": [],
@@ -769,16 +769,16 @@
           "isWatching": true
         },
         "creator": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "subtasks": [],
@@ -864,16 +864,16 @@
           "isWatching": true
         },
         "creator": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "subtasks": [],
@@ -959,16 +959,16 @@
           "isWatching": true
         },
         "creator": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "subtasks": [],
@@ -1055,16 +1055,16 @@
           "isWatching": true
         },
         "creator": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "subtasks": [],
@@ -1096,16 +1096,16 @@
           "hasVoted": false
         },
         "assignee": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "updated": "2015-03-28T14:29:48.000+0000",
@@ -1164,16 +1164,16 @@
           "isWatching": true
         },
         "creator": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "subtasks": [],
@@ -1205,16 +1205,16 @@
           "hasVoted": false
         },
         "assignee": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "updated": "2015-02-28T12:36:36.000+0000",
@@ -1273,16 +1273,16 @@
           "isWatching": true
         },
         "creator": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "subtasks": [],
@@ -1314,16 +1314,16 @@
           "hasVoted": false
         },
         "assignee": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "updated": "2015-03-07T16:45:19.000+0000",
@@ -1381,16 +1381,16 @@
           "isWatching": true
         },
         "creator": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "subtasks": [],
@@ -1477,16 +1477,16 @@
           "isWatching": true
         },
         "creator": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "subtasks": [],
@@ -1518,16 +1518,16 @@
           "hasVoted": false
         },
         "assignee": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "updated": "2015-03-28T14:29:56.000+0000",
@@ -1586,16 +1586,16 @@
           "isWatching": true
         },
         "creator": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "subtasks": [],
@@ -1627,16 +1627,16 @@
           "hasVoted": false
         },
         "assignee": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "updated": "2015-03-28T14:29:56.000+0000",
@@ -1694,16 +1694,16 @@
           "isWatching": true
         },
         "creator": {
-          "self": "http://localhost:9090/rest/api/2/user?username\u003droybailey",
-          "name": "roybailey",
-          "emailAddress": "roybaileybiz@gmail.com",
+          "self": "http://localhost:9090/rest/api/2/user?username\u003dtestuser",
+          "name": "testuser",
+          "emailAddress": "testuser@abc.def",
           "avatarUrls": {
-            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003droybailey\u0026avatarId\u003d10400",
-            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003droybailey\u0026avatarId\u003d10400"
+            "48x48": "http://localhost:9090/secure/useravatar?ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "24x24": "http://localhost:9090/secure/useravatar?size\u003dsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "16x16": "http://localhost:9090/secure/useravatar?size\u003dxsmall\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400",
+            "32x32": "http://localhost:9090/secure/useravatar?size\u003dmedium\u0026ownerId\u003dtestuser\u0026avatarId\u003d10400"
           },
-          "displayName": "Roy Bailey",
+          "displayName": "Test User",
           "active": true
         },
         "subtasks": [],
