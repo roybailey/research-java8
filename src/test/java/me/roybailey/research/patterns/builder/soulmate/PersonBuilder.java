@@ -1,33 +1,31 @@
 package me.roybailey.research.patterns.builder.soulmate;
 
 /**
- * Immutable Person object with address book.
+ * PersonBuilder object with package level access to Person access.
  */
 public class PersonBuilder {
 
-    private String name;
-    private Integer age;
-    private AddressBook addressBook;
+    private Person template = new Person();
 
-    public PersonBuilder() {
+    protected PersonBuilder() {
     }
 
     public PersonBuilder withName(String name) {
-        this.name = name;
+        this.template.name = name;
         return this;
     }
 
     public PersonBuilder withAge(Integer age) {
-        this.age = age;
+        this.template.age = age;
         return this;
     }
 
     public PersonBuilder withAddressBook(AddressBook addressBook) {
-        this.addressBook = new AddressBook(addressBook);
+        this.template.addressBook = new AddressBook(addressBook);
         return this;
     }
 
     public Person build() {
-        return new Person(name, age, addressBook);
+        return new Person(template);
     }
 }

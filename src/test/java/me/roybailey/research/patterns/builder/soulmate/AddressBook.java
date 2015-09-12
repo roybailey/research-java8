@@ -12,8 +12,11 @@ public class AddressBook {
         return new AddressBookBuilder();
     }
 
-    private Map<String, Address> addresses = new HashMap<>();
-    private String primaryAddressAlias;
+    Map<String, Address> addresses = new HashMap<>();
+    String primaryAddressAlias;
+
+    AddressBook() {
+    }
 
     public AddressBook(AddressBook addressBook) {
         this.addresses.putAll(addressBook.getAddresses());

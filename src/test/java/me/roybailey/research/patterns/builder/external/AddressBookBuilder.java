@@ -20,11 +20,11 @@ public class AddressBookBuilder {
     }
 
     public AddressBookBuilder withPrimaryAddress(String alias, Address address) {
-        this.withAddress(alias, address).withPrimaryAddress(alias);
+        this.withAddress(alias, address).withPrimaryAddressAlias(alias);
         return this;
     }
 
-    private AddressBookBuilder withPrimaryAddress(String alias) {
+    private AddressBookBuilder withPrimaryAddressAlias(String alias) {
         this.primaryAddress = alias;
         return this;
     }

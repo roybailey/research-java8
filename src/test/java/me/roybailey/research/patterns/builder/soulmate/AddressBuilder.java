@@ -1,37 +1,34 @@
 package me.roybailey.research.patterns.builder.soulmate;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
- * Immutable Address object.
+ * AddressBuilder object with package level access to Address access.
  */
 public class AddressBuilder {
 
-    private List<String> address = new ArrayList<>();
-    private String postcode;
+    private Address template = new Address();
 
     protected AddressBuilder() {
     }
 
     public AddressBuilder withAddress(String... address) {
-        this.address.clear();
-        this.address.addAll(Arrays.asList(address));
+        this.template.address.clear();
+        this.template.address.addAll(Arrays.asList(address));
         return this;
     }
 
     public AddressBuilder appendAddress(String... address) {
-        this.address.addAll(Arrays.asList(address));
+        this.template.address.addAll(Arrays.asList(address));
         return this;
     }
 
     public AddressBuilder withPostcode(String postcode) {
-        this.postcode = postcode;
+        this.template.postcode = postcode;
         return this;
     }
 
     public Address build() {
-        return new Address(address, postcode);
+        return new Address(template);
     }
 }

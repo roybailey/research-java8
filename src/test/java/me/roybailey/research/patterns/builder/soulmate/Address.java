@@ -1,5 +1,6 @@
 package me.roybailey.research.patterns.builder.soulmate;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -11,12 +12,19 @@ public class Address {
         return new AddressBuilder();
     }
 
-    private List<String> address;
-    private String postcode;
+    List<String> address = new ArrayList<>();
+    String postcode;
+
+    Address() {
+    }
 
     public Address(List<String> address, String postcode) {
-        this.address = address;
+        this.address.addAll(address);
         this.postcode = postcode;
+    }
+
+    public Address(Address template) {
+        this(template.address, template.postcode);
     }
 
     @Override

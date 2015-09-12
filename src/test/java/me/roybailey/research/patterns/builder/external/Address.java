@@ -1,5 +1,6 @@
 package me.roybailey.research.patterns.builder.external;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -7,11 +8,11 @@ import java.util.List;
  */
 public class Address {
 
-    private List<String> address;
+    private List<String> address = new ArrayList<>();
     private String postcode;
 
     public Address(List<String> address, String postcode) {
-        this.address = address;
+        this.address.addAll(address);
         this.postcode = postcode;
     }
 

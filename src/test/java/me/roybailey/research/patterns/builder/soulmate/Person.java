@@ -9,9 +9,16 @@ public class Person {
         return new PersonBuilder();
     }
 
-    private String name;
-    private Integer age;
-    private AddressBook addressBook;
+    String name;
+    Integer age;
+    AddressBook addressBook;
+
+    Person() {
+    }
+
+    public Person(Person template) {
+        this(template.getName(), template.getAge(), template.getAddressBook());
+    }
 
     public Person(String name, Integer age, AddressBook addressBook) {
         this.name = name;

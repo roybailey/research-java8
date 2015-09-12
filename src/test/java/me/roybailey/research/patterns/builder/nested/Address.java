@@ -42,11 +42,11 @@ public class Address {
         return new Builder();
     }
 
-    private List<String> address;
+    private List<String> address = new ArrayList<>();
     private String postcode;
 
     public Address(List<String> address, String postcode) {
-        this.address = address;
+        this.address.addAll(address);
         this.postcode = postcode;
     }
 
