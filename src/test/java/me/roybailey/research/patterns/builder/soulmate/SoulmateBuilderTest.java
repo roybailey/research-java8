@@ -1,4 +1,4 @@
-package me.roybailey.research.patterns.builder.nested;
+package me.roybailey.research.patterns.builder.soulmate;
 
 import org.junit.Test;
 
@@ -8,7 +8,7 @@ import static org.junit.Assert.assertThat;
 /**
  * @author roybailey
  */
-public class NestedBuilderTest {
+public class SoulmateBuilderTest {
 
     @Test
     public void testNestedBuilder() {

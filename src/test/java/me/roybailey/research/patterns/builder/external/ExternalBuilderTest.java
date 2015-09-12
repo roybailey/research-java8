@@ -1,4 +1,4 @@
-package me.roybailey.research.patterns.builder.nested;
+package me.roybailey.research.patterns.builder.external;
 
 import org.junit.Test;
 
@@ -8,12 +8,12 @@ import static org.junit.Assert.assertThat;
 /**
  * @author roybailey
  */
-public class NestedBuilderTest {
+public class ExternalBuilderTest {
 
     @Test
-    public void testNestedBuilder() {
+    public void testExternalBuilder() {
 
-        Address home = Address.Builder()
+        Address home = new AddressBuilder()
                 .withAddress("1 High Street", "Somewhere", "Bigcity")
                 .withPostcode("1HS 1BC")
                 .build();
@@ -24,7 +24,7 @@ public class NestedBuilderTest {
         assertThat(home.getAddress().get(2), is("Bigcity"));
         assertThat(home.getPostcode(), is("1HS 1BC"));
 
-        Address work = Address.Builder()
+        Address work = new AddressBuilder()
                 .withAddress("1 Business Park", "Industrial Estate", "Working")
                 .withPostcode("1BP 1IE")
                 .build();
@@ -35,7 +35,7 @@ public class NestedBuilderTest {
         assertThat(work.getAddress().get(2), is("Working"));
         assertThat(work.getPostcode(), is("1BP 1IE"));
 
-        AddressBook addressBook = AddressBook.Builder()
+        AddressBook addressBook = new AddressBookBuilder()
                 .withPrimaryAddress("home", home)
                 .withAddress("work", work)
                 .build();
@@ -45,8 +45,8 @@ public class NestedBuilderTest {
         assertThat(addressBook.getAddress("home").getPostcode(), is("1HS 1BC"));
         assertThat(addressBook.getAddress("work").getPostcode(), is("1BP 1IE"));
         assertThat(addressBook.getPrimaryAddressAlias(), is("home"));
-        
-        Person person = Person.Builder()
+
+        Person person = new PersonBuilder()
                 .withName("Anna")
                 .withAge(20)
                 .withAddressBook(addressBook)

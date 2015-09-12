@@ -1,5 +1,6 @@
-package me.roybailey.research.patterns.builder;
+package me.roybailey.research.patterns.builder.soulmate;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -7,8 +8,17 @@ import java.util.Map;
  */
 public class AddressBook {
 
-    private Map<String, Address> addresses;
+    public static AddressBookBuilder Builder() {
+        return new AddressBookBuilder();
+    }
+
+    private Map<String, Address> addresses = new HashMap<>();
     private String primaryAddressAlias;
+
+    public AddressBook(AddressBook addressBook) {
+        this.addresses.putAll(addressBook.getAddresses());
+        this.primaryAddressAlias = addressBook.getPrimaryAddressAlias();
+    }
 
     public AddressBook(Map<String, Address> addresses, String primaryAddressAlias) {
         this.addresses = addresses;
@@ -49,4 +59,13 @@ public class AddressBook {
     public String getPrimaryAddressAlias() {
         return primaryAddressAlias;
     }
+
+    public Address getAddress(String alias) {
+        return this.addresses.get(alias);
+    }
+
+    public Address getPrimaryAddress() {
+        return getAddress(getPrimaryAddressAlias());
+    }
+
 }

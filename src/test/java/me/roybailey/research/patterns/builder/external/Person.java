@@ -1,7 +1,7 @@
-package me.roybailey.research.patterns.builder;
+package me.roybailey.research.patterns.builder.external;
 
 /**
- * Immutable Person object.
+ * Immutable Person object with address book.
  */
 public class Person {
 
@@ -49,4 +49,9 @@ public class Person {
     public Integer getAge() {
         return age;
     }
+
+    public AddressBook getAddressBook() {
+        return addressBook;
+    }
+
 }
