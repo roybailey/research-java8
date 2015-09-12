@@ -40,7 +40,7 @@ public class AddressBook {
         return new Builder();
     }
 
-    private Map<String, Address> addresses;
+    private Map<String, Address> addresses = new HashMap<>();
     private String primaryAddressAlias;
 
     public AddressBook(AddressBook addressBook) {
