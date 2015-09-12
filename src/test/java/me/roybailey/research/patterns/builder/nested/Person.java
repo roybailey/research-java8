@@ -1,7 +1,7 @@
 package me.roybailey.research.patterns.builder.nested;
 
 /**
- * Immutable Person object.
+ * Immutable Person object with address book.
  */
 public class Person {
 
@@ -9,6 +9,7 @@ public class Person {
 
         private String name;
         private Integer age;
+        private AddressBook addressBook;
 
         public Builder() {
         }
@@ -23,8 +24,13 @@ public class Person {
             return this;
         }
 
+        public Builder withAddressBook(AddressBook addressBook) {
+            this.addressBook = new AddressBook(addressBook);
+            return this;
+        }
+
         public Person build() {
-            return new Person(name, age, null);
+            return new Person(name, age, addressBook);
         }
     }
 
@@ -76,4 +82,9 @@ public class Person {
     public Integer getAge() {
         return age;
     }
+
+    public AddressBook getAddressBook() {
+        return addressBook;
+    }
+
 }

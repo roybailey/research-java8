@@ -1,5 +1,6 @@
 package me.roybailey.research.patterns.builder.nested;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -9,7 +10,7 @@ public class AddressBook {
 
     public static class Builder {
 
-        private Map<String, Address> addresses;
+        private Map<String, Address> addresses = new HashMap<>();
         private String primaryAddress;
 
         public Builder() {
@@ -41,6 +42,11 @@ public class AddressBook {
 
     private Map<String, Address> addresses;
     private String primaryAddressAlias;
+
+    public AddressBook(AddressBook addressBook) {
+        this.addresses.putAll(addressBook.getAddresses());
+        this.primaryAddressAlias = addressBook.getPrimaryAddressAlias();
+    }
 
     public AddressBook(Map<String, Address> addresses, String primaryAddressAlias) {
         this.addresses = addresses;
@@ -81,4 +87,13 @@ public class AddressBook {
     public String getPrimaryAddressAlias() {
         return primaryAddressAlias;
     }
+
+    public Address getAddress(String alias) {
+        return this.addresses.get(alias);
+    }
+
+    public Address getPrimaryAddress() {
+        return getAddress(getPrimaryAddressAlias());
+    }
+
 }
