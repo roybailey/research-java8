@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Immutable Address object.
+ * Address object.
  */
 public class Address {
 

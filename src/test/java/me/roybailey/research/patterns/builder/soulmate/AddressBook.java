@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Immutable AddressBook object to capture collection of aliases addresses.
+ * AddressBook object to capture collection of aliases addresses.
  */
 public class AddressBook {
 

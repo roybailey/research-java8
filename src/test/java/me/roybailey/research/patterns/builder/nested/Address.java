@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Immutable Address object.
+ * Address object.
  */
 public class Address {
 

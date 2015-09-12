@@ -1,7 +1,7 @@
 package me.roybailey.research.patterns.builder.external;
 
 /**
- * Immutable Person object with address book.
+ * External Person Builder object.
  */
 public class PersonBuilder {
 
