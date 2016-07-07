@@ -13,7 +13,7 @@ public class ReactTest {
 
     // Constructor, sets up React and the Component
     public ReactTest() throws Throwable {
-        nashorn = (NashornScriptEngine) new ScriptEngineManager().getEngineByName("nashorn");        ScriptEngineManager sem = new ScriptEngineManager();
+        nashorn = (NashornScriptEngine) new ScriptEngineManager().getEngineByName("nashorn");
         // React depends on the "global" variable
         nashorn.eval("var global = this");
         // eval react.js
@@ -27,8 +27,7 @@ public class ReactTest {
         try {
             Object html = nashorn.invokeFunction("renderFromServer", text);
             return String.valueOf(html);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             throw new IllegalStateException("failed to render react component", e);
         }
     }
