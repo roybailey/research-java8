@@ -2,6 +2,7 @@ package me.roybailey.research.retrofit;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import org.junit.Ignore;
 import org.junit.Test;
 import retrofit.RestAdapter;
 import retrofit.client.Response;
@@ -18,6 +19,7 @@ import java.util.Map;
 public class RetrofitJiraBasicTest {
 
     @Test
+    @Ignore // only when we have JIRA installed locally, which we no longer do
     public void testJIRARestAPI() throws IOException {
         String credentials = System.getProperty("login");
         if(credentials==null) {

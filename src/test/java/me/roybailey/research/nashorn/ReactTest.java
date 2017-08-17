@@ -17,10 +17,10 @@ public class ReactTest {
         // React depends on the "global" variable
         nashorn.eval("var global = this");
         // eval react.js
-        nashorn.eval(new FileReader("src/test/java/research/nashorn/nashorn-polyfill.js"));
-        nashorn.eval(new FileReader("src/test/java/research/nashorn/react/react.js"));
+        nashorn.eval(new FileReader("./src/test/java/me/roybailey/research/nashorn/nashorn-polyfill.js"));
+        nashorn.eval(new FileReader("./src/test/java/me/roybailey/research/nashorn/react/react.js"));
         // This would also be an external JS file
-        nashorn.eval(new FileReader("src/test/java/research/nashorn/ReactTest.js"));
+        nashorn.eval(new FileReader("./src/test/java/me/roybailey/research/nashorn/ReactTest.js"));
     }
 
     public String render(String text) {
