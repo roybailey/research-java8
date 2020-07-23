@@ -3,9 +3,7 @@ package me.roybailey.research.sparkjava;
 import me.roybailey.research.lambda.collection.Gender;
 import me.roybailey.research.lambda.collection.Person;
 
-import static spark.Spark.get;
-import static spark.SparkBase.port;
-import static spark.SparkBase.staticFileLocation;
+import static spark.Spark.*;
 
 
 public class SparkJsonApp {
