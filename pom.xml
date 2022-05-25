@@ -13,7 +13,7 @@
         <logback.version>1.1.7</logback.version>
         <slf4j.version>1.7.2</slf4j.version>
         <guava.version>29.0-jre</guava.version>
-        <spring.version>4.3.28.RELEASE</spring.version>
+        <spring.version>5.2.22.RELEASE</spring.version>
         <jackson.version>2.11.1</jackson.version>
         <retrofit.version>1.9.0</retrofit.version>
         <sparkjava.version>2.9.2</sparkjava.version>
